@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url(../estilos/reset.css);
+@import url(../estilos/header.css);
+@import url(../estilos/main.css);
+@import url(../estilos/cardProjetoComunidade.css);
+
+
+:root{
+    --cor-primaria: #051D3B;
+    --cor-secundaria: #6BD1FF;
+    --cor-input:#2D415B;
+    --fonte: 'Inter', sans-serif;
+}

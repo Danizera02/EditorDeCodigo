@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Código</title>
+    <link rel="stylesheet" href="./estilos/dracula.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <input type="search" placeholder="Busque por algo" class="input__pesquisa">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabeçalho__menu-hamburguer container__imagem">
+                    </span>
+                </label>
+            </div>
+            <div class="menu__links">
+                <ul>
+                    <li><a href="index.html">Editor de Código</a></li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                </ul>
+            </div>
+
+            <div class="usuario">
+                <img src="./imagens/Photo.png" alt="Imagem do usuário">
+                <p>Harry</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="menu">
+            <h2>Menu</h2>
+            <div class="div-links-menu-esquerdo">
+                <div class="div-imagem-link">
+                    <img src="./imagens/Icon.png">
+                    <a href="#" class="links-menu-esquerdo">Editor de código</a>
+                </div>
+                <div class="div-imagem-link">
+                    <img src="./imagens/Icon (1).png">
+                    <a href="./comunidade.html" class="links-menu-esquerdo">Comunidade</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="codigo" id="codigo">
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de código">function teste() {}</code>
+        </div>
+
+        <div class="visualizarCodigo2">
+            <button class="botaoVisualizarHighlight">Visualizar com o highlight</button>
+        </div>
+
+        <div class="menu-direito">
+            <div class="div-seuProjeto">
+                <h2>Seu projeto</h2>
+                <input type="text" class="input-nome" placeholder="Nome do seu projeto" required>
+                <input type="text" class="input-descricao" placeholder="Descrição do seu projeto" required>
+            </div>
+
+            <h2>Personalização</h2>
+            <div class="div-personalizacao">
+
+                <div>
+                    <select name="selecionar-linguagem" id="select-linguagem" required>
+                        <option value="...">...</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Typescript">Typescript</option>
+                        <option value="html">Html</option>
+                        <option value="css">css</option>
+                    </select>
+                </div>
+                <input type="color" id="inputCor" value="#6BD1FF">
+            </div>
+            <input type="submit" class="btn-salvarProjeto" value="Salvar projeto" id="salvarProjeto">
+            <div class="alerta" id="meuAlerta">
+                <span class="fechar" id="fecharAlerta">&times;</span>
+                <p>Projeto salvo com sucesso! Veja na página de comunidade.</p>
+            </div>
+        </div>
+    </main>
+    <div class="visualizarCodigo">
+        <button class="botaoVisualizarHighlight" id="btn_visualizar">Visualizar com o highlight</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

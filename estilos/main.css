@@ -1,0 +1,421 @@
+main {
+    display: inline-block;
+    justify-content: center;
+}
+
+.codigo {
+    background-color: var(--cor-secundaria);
+    width: 88%;
+    height: 50%;
+    margin-top: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.codigo code{
+    white-space: pre-wrap;
+    width: 100%;
+    height: 428px;
+    border-radius: 8px;
+}
+
+.visualizarCodigo2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.visualizarCodigo2 button {
+    width: 330px;
+    height: 56px;
+    color: white;
+    background-color: #5081FB14;
+    border: 1px solid #5081FB14;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.visualizarCodigo {
+    display: none;
+}
+
+
+.menu {
+    display: none;
+}
+
+.menu-direito {
+    display: inline-block;
+}
+
+.menu-direito h2 {
+    color: white;
+    font-weight: 400;
+    font-family: var(--fonte);
+    margin: 10px 0px 10px 10px;
+}
+
+.input-nome {
+    background-color: #5081FB14;
+    border: 1px solid #5081FB14;
+    margin: 10px 0px 5px 30px;
+    height: 56px;
+    width: 272px;
+    border-radius: 8px;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.input-nome::placeholder {
+    padding: 1em;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.input-descricao {
+    background-color: #5081FB14;
+    border: 1px solid #5081FB14;
+    margin: 10px 0px 5px 30px;
+    height: 80px;
+    width: 272px;
+    border-radius: 8px;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.input-descricao::placeholder {
+    padding: 1em;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.menu-direito select {
+    background-color: #5081FB14;
+    border: 1px solid #5081FB14;
+    margin: 10px 0px 5px 30px;
+    height: 56px;
+    width: 272px;
+    border-radius: 8px;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.menu-direito select option {
+    color: black;
+}
+
+.div-personalizacao input {
+    border: 1px solid white;
+    margin: 10px 0px 5px 30px;
+    height: 56px;
+    width: 272px;
+    border-radius: 8px;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #5081FB14 ;
+}
+
+.btn-salvarProjeto {
+    width: 272px;
+    height: 56px;
+    background-color: #5081FB;
+    color: var(--cor-primaria);
+    border-radius: 8px;
+    border: 1px solid;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0px 5px 30px;
+
+}
+
+.btn-salvarProjeto:hover {
+    background-color: #7BA4FC;
+}
+
+.btn-salvarProjeto:focus {
+    border: 4px solid #5081FBB8;
+}
+
+.botaoVisualizarHighlight:hover {
+    background-color: rgba(80, 129, 251, 0.16);
+}
+
+.botaoVisualizarHighlight:focus {
+    border: 4px solid rgba(80, 129, 251, 0.16);
+}
+
+.alerta {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f2f2f2;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alerta p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.fechar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.fechar:hover {
+    color: red;
+}
+
+@media screen and (min-width: 768px) {
+
+    .codigo {
+        margin: 10px auto 10px auto;
+        padding: 2em;
+    }
+
+    .visualizarCodigo {
+        display: none;
+    }
+
+    .visualizarCodigo2 button {
+        width: 704px;
+    }
+
+    .input-nome {
+        width: 704px
+    }
+
+    .input-descricao {
+        width: 704px
+    }
+
+    .div-personalizacao {
+        display: flex;
+    }
+
+    .div-personalizacao select {
+        width: 344px;
+    }
+
+    .div-personalizacao input {
+        width: 344px;
+    }
+
+    .btn-salvarProjeto {
+        width: 704px;
+    }
+
+    .codigo {
+        width: 85%;
+    }
+
+    .botaoVisualizarHighlight:hover {
+        background-color: rgba(80, 129, 251, 0.16);
+    }
+
+    .botaoVisualizarHighlight:focus {
+        border: 4px solid rgba(80, 129, 251, 0.16);
+    }
+
+    .codigo code{
+        white-space: pre-wrap;
+        width: 100%;
+        height: 428px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .codigo {
+        background-color: var(--cor-secundaria);
+        width: 50%;
+        margin-top: 15px;
+        border-radius: 8px;
+        padding: 1em;
+    }
+
+    .menu {
+        display: block;
+        padding: 1em;
+        color: white;
+        font-weight: 400;
+        font-family: var(--fonte);
+        width: 25%;
+    }
+
+    .links-menu-esquerdo {
+        font-family: var(--fonte);
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .div-links-menu-esquerdo {
+        padding: 1em;
+    }
+
+    .div-imagem-link {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .menu-direito {
+        display: block;
+        width: 25%;
+    }
+
+    .menu-direito h2 {
+        color: white;
+        font-weight: 400;
+        font-family: var(--fonte);
+        text-align: left;
+        margin: 15px 0px 0px 30px;
+    }
+
+    .input-nome {
+        background-color: #5081FB14;
+        border: 1px solid #5081FB14;
+        margin: 10px 0px 5px 30px;
+        height: 56px;
+        width: 272px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+    }
+
+    .input-nome::placeholder {
+        padding: 1em;
+        font-family: var(--fonte);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .input-descricao {
+        background-color: #5081FB14;
+        border: 1px solid #5081FB14;
+        margin: 10px 0px 5px 30px;
+        height: 80px;
+        width: 272px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+    }
+
+    .input-descricao::placeholder {
+        padding: 1em;
+        font-family: var(--fonte);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .menu-direito select {
+        background-color: #5081FB14;
+        border: 1px solid #5081FB14;
+        margin: 10px 0px 5px 30px;
+        height: 56px;
+        width: 272px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+    }
+
+    .menu-direito select option {
+        color: black;
+    }
+
+
+    .btn-salvarProjeto {
+        width: 272px;
+        height: 56px;
+        background-color: #5081FB;
+        color: var(--cor-primaria);
+        border-radius: 8px;
+        border: 1px solid;
+        font-family: var(--fonte);
+        font-weight: 400;
+        font-size: 16px;
+        margin: 10px 0px 5px 30px;
+
+    }
+
+    .visualizarCodigo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .visualizarCodigo button {
+        width: 752px;
+        height: 56px;
+        color: white;
+        background-color: #5081FB14;
+        border: 1px solid #5081FB14;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .visualizarCodigo2 {
+        display: none;
+    }
+
+    .div-personalizacao {
+        display: inline;
+    }
+
+    .div-personalizacao input {
+        border: 1px solid white;
+        margin: 10px 0px 5px 30px;
+        height: 56px;
+        width: 272px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+    .botaoVisualizarHighlight:hover {
+        background-color: rgba(80, 129, 251, 0.16);
+    }
+
+    .botaoVisualizarHighlight:focus {
+        border: 4px solid rgba(80, 129, 251, 0.16);
+    }
+}
